@@ -4,6 +4,6 @@ workflow "Test and build APK" {
 }
 
 action "Build Debug APK" {
-  uses = "vayan/action-gradle@master"
+  uses = "vayan/action-android-gradle@master"
   args = "assembleDebug"
 }
