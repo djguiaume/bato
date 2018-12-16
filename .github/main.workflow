@@ -7,7 +7,7 @@ workflow "Build and test on push" {
 }
 
 action "Run unit tests" {
-  uses = "vayan/action-android-gradle@master"
+  uses = "vayan/action-android-gradle@1.0.0"
   args = "test"
 }
 
@@ -24,7 +24,7 @@ action "Master branch" {
 }
 
 action "Build APK" {
-  uses = "vayan/action-android-gradle@master"
+  uses = "vayan/action-android-gradle@1.0.0"
   needs = ["Master branch"]
   args = "assembleDebug"
 }
