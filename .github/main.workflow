@@ -4,6 +4,6 @@ workflow "Run tests" {
 }
 
 action "Run tests with gradle" {
-  uses = "MrRamych/gradle-actions@master"
+  uses = "vayan/action-gradle@master"
   args = "test"
 }
